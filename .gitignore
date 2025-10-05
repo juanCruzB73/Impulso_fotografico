@@ -1,0 +1,30 @@
+#front
+# Logs
+impulso-front/logs
+impulso-front/*.log
+impulso-front/npm-debug.log*
+impulso-front/yarn-debug.log*
+impulso-front/yarn-error.log*
+impulso-front/pnpm-debug.log*
+impulso-front/lerna-debug.log*
+
+impulso-front/node_modules
+impulso-front/dist
+impulso-front/dist-ssr
+impulso-front/*.local
+
+# Editor directories and files
+impulso-front/.vscode/*
+impulso-front/!.vscode/extensions.json
+impulso-front/.idea
+impulso-front/.DS_Store
+impulso-front/*.suo
+impulso-front/*.ntvs*
+impulso-front/*.njsproj
+impulso-front/*.sln
+impulso-front/*.sw?
+impulso-front/.env
+
+#back
+impulso_back/node_modules
+impulso_back/.env
