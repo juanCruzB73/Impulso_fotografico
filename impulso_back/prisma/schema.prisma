@@ -11,7 +11,7 @@ model User {
     password   String?  @db.VarChar(255)
     rol        String?  @db.VarChar(255)
     active     Boolean?
-    username String? @db.VarChar(255)
+    username String? @unique @db.VarChar(255)
     createdAt DateTime @default(now())
     @@map("users")
 }

@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import { User } from "../models/models";
 import bcrypt from "bcrypt";
+import { IRegisterBody } from "../types/registerBody";
 
 export const getUsers = async(req:Request,res:Response)=>{
     try{
@@ -13,7 +14,7 @@ export const getUsers = async(req:Request,res:Response)=>{
     }
 }
 
-export const registerUser = async(req:Request,res:Response)=>{
+export const registerUser = async(req:Request<{},{},IRegisterBody>,res:Response)=>{
     try{
         const { email,password,username} = req.body;
 
